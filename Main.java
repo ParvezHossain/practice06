@@ -14,6 +14,8 @@ public class Main {
 
         System.out.println("Period" + period.start() + " to " + period.end() + " (" + period.days() + " days)");
 
+        System.out.println("Days: " + period.days());
+
         Rental rental = rentalService.rentalVehicle(car, period);
         System.out.println("Vehicle rented: " + rental.getVehicle().getId());
 
